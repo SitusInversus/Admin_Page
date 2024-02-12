@@ -67,13 +67,38 @@ main {
     grid: 1fr / minmax(30rem, 3fr) 1fr
 }
 
-.projects {
+/* .projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem
+    justify-content: space-around;
+} */
+
+
+
+.projects {
+    display:grid;
+
+    padding: 3rem 3rem;
+    gap: 3rem;
+
+    grid: 1fr 1fr 1fr / repeat(auto-fill, minmax(30ch, 50ch));
 }
 
-/* .projects {
-    display:grid;
-    grid: 2 / repeat(auto-fill, minmax(40ch, 50ch));
-} */
+.projects article {
+    background: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    padding: 1rem;
+}
+
+.projects article p {
+
+    padding: 2rem 1rem;
+}
+
+.projects article .icon_wrapper {
+    align-self: flex-end;
+    padding-right: 1rem;
+}
