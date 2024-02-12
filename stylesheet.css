@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    border: solid red 1px;
+}
+
+.container {
+    background-color: aqua;
+
+    display: grid;
+    grid: minmax(30ch, 1fr) minmax(60ch, 4fr) / 1fr 4fr;
+}
