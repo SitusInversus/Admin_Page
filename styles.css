@@ -40,3 +40,23 @@ ul > :not(:first-child) {
 nav i {
     margin-right: 1em;
 }
+
+header {
+    display: grid;
+    grid:  repeat(2,minmax(4rem, 8rem)) / 3fr 1fr
+}
+
+header > form {
+    background-color: antiquewhite;
+    /* grid: 1 / 1 / 2 / 2; */
+}
+
+header > .user_account {
+    background: red;
+    /* grid: 1 / 2 / 2 / 3; */
+    justify-items: end;
+}
+
+header > .welcome {
+    background-color: yellow;
+}
