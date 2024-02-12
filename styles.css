@@ -37,6 +37,6 @@ ul > :not(:first-child) {
     margin-top: 3ch;
 }
 
-i {
+nav i {
     margin-right: 1em;
 }
