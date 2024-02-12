@@ -60,3 +60,20 @@ header > .user_account {
 header > .welcome {
     background-color: yellow;
 }
+
+main {
+    background-color: blanchedalmond;
+    display: grid;
+    grid: 1fr / minmax(30rem, 3fr) 1fr
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem
+}
+
+/* .projects {
+    display:grid;
+    grid: 2 / repeat(auto-fill, minmax(40ch, 50ch));
+} */
