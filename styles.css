@@ -4,15 +4,23 @@
     list-style: none;
     margin: 0;
     padding: 0;
+   
 }
+/* color schema green */
+/* --main-bg-cl : rgb(6, 110, 97);
+--nav-bg-cl: rgba(221, 255, 0, 0.383);
+--header-bg-cl: rgb(0, 217, 115);
+--article-bg-cl: white;
+--card-bg-cl: white;
+--input-bg-cl: white; */
 
 :root {
-    --main-bg-cl : blanchedalmond;
-    --nav-bg-cl:aliceblue;
-    --header-bg-cl: aquamarine;
+    --main-bg-cl : rgb(6, 110, 97);
+    --nav-bg-cl: rgba(221, 255, 0, 0.383);
+    --header-bg-cl: rgb(0, 217, 115);
     --article-bg-cl: white;
     --card-bg-cl: white;
-    --input-bg-cl: whitesmoke;
+    --input-bg-cl: white;
     }
 
 body {
@@ -24,7 +32,7 @@ body {
     grid: 150px 4.5fr / 200px minmax(400px, 1fr);
 }
 nav {
-    background-color: aliceblue;
+    background-color:var(--nav-bg-cl);
     grid-area:  1 / 1 / 3 / 2;
 
     display: flex;
@@ -124,6 +132,10 @@ header .welcome img {
 header button {
     font-size: 20px;
     width: 12ch;
+    border-radius: 5px;
+    background-color: white;
+    border-color: black;
+    outline: black;
 }
 
 header button:last-of-type {
@@ -153,6 +165,7 @@ article {
     flex-direction: column;
     place-content: center;
     padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.647) 2px 3px 5px 1px;
 }
 
 article p {
@@ -189,7 +202,7 @@ article .icon_wrapper {
 }
 
 .sidebar p:not(:first-of-type) {
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     border-top: 2px solid;
     border-image: linear-gradient(to right, transparent 12%, rgb(55, 159, 182) 12.1%, rgb(16, 76, 56) 50%, rgb(55, 159, 182) 88.1%, transparent 88%) 100% 1;
 }
