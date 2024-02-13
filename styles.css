@@ -1,14 +1,13 @@
 * {
     box-sizing: border-box;
-    /* border: solid red 1px; */
+/*  */
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 16px;
 }
 
 :root {
-    
+
 }
 
 body {
@@ -25,19 +24,18 @@ nav {
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: flex-start;
     gap: 8ch;
 }
 
 nav > * {
    margin-left: 1.5rem;
-   font-size: max(16px, 1.2rem);
+   font-size: max(16px, 1.0rem);
    font-weight: 600;
 }
 
 nav .dashboard {
-    font-size: max(20px, 1.3rem);
+    font-size: max(20px, 1.25rem);
     justify-self: flex-end;
     margin: 5ch auto 0 auto;
 }
@@ -56,7 +54,7 @@ li, .dashboard {
     align-items: center;
 }
 
-nav i {
+nav i, header i, article i {
     margin-right: 1rem;
     align-self: center;
 }
@@ -64,21 +62,62 @@ nav i {
 header {
     background-color: aquamarine;
     display: grid;
-    grid:  repeat(2,minmax(4rem, 8rem)) / 3fr 1fr
+    grid:  1.4fr 2fr / 3fr 1fr;
+    font-weight: 600;
 }
 
-header > form {
-    /* background-color: antiquewhite; */
-    /* grid: 1 / 1 / 2 / 2; */
+header > * {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+    gap: 1rem;
+    font-size: 20px;
 }
 
-header > .user_account {
-    /* grid: 1 / 2 / 2 / 3; */
-    justify-items: end;
+header form label {
+    display: flex;
+    align-items: center;
+    flex: 1;
 }
 
-header > .welcome {
-   /*  background-color: yellow; */
+header input {
+    background-color: blue;
+    width: 70%;
+    height: 25px;
+    border-radius: 10px;
+}
+
+header .welcome {
+    line-height: 30px;
+    font-size: 18px
+}
+
+
+
+header .welcome span {
+    font-size: 25px;
+}
+
+header .welcome img {
+
+    height: 60px;
+    width: 60px;
+    padding: 6px;
+    background-color: white;
+    border-radius: 20px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+}
+
+header button {
+    font-size: 20px;
+    width: 12ch;
+}
+
+header button:last-of-type {
+    margin-right: 2rem;
 }
 
 main {
