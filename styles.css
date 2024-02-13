@@ -70,9 +70,11 @@ header > * {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 2rem;
     gap: 1rem;
     font-size: 20px;
+}
+header form {
+    padding-left: 2rem;
 }
 
 header form label {
@@ -82,7 +84,9 @@ header form label {
 }
 
 header input {
-    background-color: blue;
+    background-color: whitesmoke;
+    border-color: black;
+    outline: black;
     width: 70%;
     height: 25px;
     border-radius: 10px;
@@ -90,7 +94,8 @@ header input {
 
 header .welcome {
     line-height: 30px;
-    font-size: 18px
+    font-size: 18px;
+    padding-left: 2rem;
 }
 
 
