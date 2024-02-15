@@ -238,17 +238,25 @@ article .icon_wrapper {
 footer {
     bottom: 0;
     left: 0;
-    /* align-items: center; */
-    /* justify-content: center; */
     gap: 10px;
     width: 100%;
     padding: 10px;
     font-size: 20px;
     position: absolute;
 }
-a {
+@keyframes rainbow {
+    0% {background-position: 0% 0%;}
+    50% {background-position: 50% 50%;}
+    100 {background-position: 100% 100%;}
+}
+FOOTER, a {
     text-decoration: none;
-    color: black;
+    background-image: repeating-linear-gradient(45deg,purple, red, blue, darkgreen);
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 7s ease infinite;
+    background-size: 800% 800%;
+    
 }
 
 .fa-github {
@@ -258,4 +266,5 @@ a {
 
 .fa-github:hover {
     transform: rotate(360deg) scale(1.2);
+    color: purple;
       }
