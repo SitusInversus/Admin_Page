@@ -249,9 +249,10 @@ footer {
     50% {background-position: 50% 50%;}
     100 {background-position: 100% 100%;}
 }
+
 FOOTER, a {
     text-decoration: none;
-    background-image: repeating-linear-gradient(45deg,purple, red, blue, darkgreen);
+    background-image: repeating-linear-gradient(45deg,purple, red, blue, darkgreen, white);
     background-clip: text;
     color: transparent;
     animation: rainbow 7s ease infinite;
@@ -268,4 +269,4 @@ FOOTER, a {
 .fa-github:hover {
     transform: rotate(360deg) scale(1.2);
     color: purple;
-      }
+}
