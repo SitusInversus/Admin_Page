@@ -178,7 +178,7 @@ main {
     display: grid;
     padding: 2rem;
     grid-area: 2 / 2 /-1 /-1;
-    grid: repeat(3, minmax(20rem,0.34fr))/ repeat(auto-fill, minmax(25rem, 1fr));
+    grid: repeat(3, minmax(20rem, 0.4fr))/ repeat(auto-fill, minmax(23rem, 1.2fr));
     gap: 1rem;
 }
 
