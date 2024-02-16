@@ -1,9 +1,6 @@
-# Admin_Page
+# Admin Page
 
 Project Admin Page
 
-Layout is given by Odin-Project.
+A small project to apply Grid, part of "The Odin Project".
 
-Do Layout in small functionals units
-
-Start with genereal Layout
