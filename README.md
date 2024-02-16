@@ -2,7 +2,7 @@
 
 Project Admin Page
 
-A small project to apply Grid, part of "The Odin Project".
+A small project to apply lessons about Grid and Flexbox.
 
-🔗 **Live preview:** [here](situsinversus.github.io/Admin_Page)
+Part of "The Odin Project".
 
